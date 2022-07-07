@@ -24,7 +24,7 @@ void print_string(va_list args)
 	putchar('n');
 	putchar('i');
 	putchar('l');
-	retrun (0;)
+	retrun (0);
 }
 	putchar ("%s");
 }
