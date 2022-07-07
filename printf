@@ -2,7 +2,7 @@
 #include<stdio.h> 
 #include<stdarg.h> 
 /**
- *_printf - our own printf
+ *_printf - our own printf function
  *@format: the character that we goona return
  *return: void
  */
