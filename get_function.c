@@ -1,53 +1,96 @@
+/* this file containe the function to print the specified type*/
+
+
 #include "main.h"
+
+
 /**
- * print_char - function that return a character
- * @args: the character that we gonna return
- * return: void
+ * print_char - function that print a character
+ * @args: the arguments
+ * Return: 1
  */
-void print_char(va_list args)
+int print_char(va_list args)
 {
 	char c;
-	c = va_arg(arg, int);
-	putchar("%c");
+
+	c = va_arg(args, int);
+	_putchar(c);
+	return (1);
 }
+
 /**
- * print_string - function that return a string
- * @args: the string that we gonna return
- * return: void
+ * print_string - function that print a string
+ * @args: the arguments
+ * Return: number of charcter printed
  */
-void print_string(va_list args)
+int print_string(va_list args)
 {
 	char *str;
-	str = va_arg(arg, char*);
+	int i = 0;
+
+	str = va_arg(args, char*);
+
 	if (str == NULL)
-{
-	putchar('n');
-	putchar('i');
-	putchar('l');
-	retrun (0);
+		str = "(NULL)";
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+
+	return (i);
+
 }
-	putchar ("%s");
-}
+
+
 /**
- * print_op - function that return a modulo sgine
- * @args: the modulo signe that we gonna return
- * return: void
+ * print_pers - function that print a % sgine
+ * @args: the argument
+ * Return: 1
  */
-void print_op(va_list args)
+int print_pers(va_list args)
 {
-	char p;
-	p = va_arg(arg, int);
-	putchar("%c");
+	(void) args;
+
+	_putchar('%');
+	return (1);
 }
+
+
 /**
-*_isdigit - function that checks for a digit
-*@c: the number that we goona use it to check
+*print_int - function that print a decimal or an integr number
+*@args: the arguument
 *Return: 1 if ou number is digit else 0
 */
-int _isdigit(int c)
+int print_int(va_list args)
 {
-if (c >= 48 && c <= 57)
-return (1);
-else
-return (0);
+	int n, i, x, rest;
+
+	n = va_arg(args, int);
+	i = 0;
+	rest = 1;
+
+	x = n;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		x = -x;
+		i++;
+	}
+	while ((x / rest) > 0)
+	{
+		rest = rest * 10;
+
+	}
+	while (rest > 0)
+	{
+		_putchar(x / rest + '0');
+		x = (x % rest);
+		rest = rest / 10;
+		i++;
+	}
+	return (i);
+
 }
