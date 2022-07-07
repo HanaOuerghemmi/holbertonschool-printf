@@ -1,0 +1,10 @@
+#include "main.h"
+/**
+ * _printf - our own printf
+ * @format: the character that we gonna return
+ * return: void
+ */
+int _printf(const char *format, ...)
+{
+
+}
