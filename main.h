@@ -12,3 +12,4 @@ void print_char(va_list args);
 void print_string(va_list args);
 void print_op(va_list args);
 int _isdigit(int c);
+int _printf(const char *format, ...);
