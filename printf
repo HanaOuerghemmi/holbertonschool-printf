@@ -1,8 +1,10 @@
 #include "main.h"
+#include<stdio.h> 
+#include<stdarg.h> 
 /**
- * _printf - our own printf
- * @format: the character that we gonna return
- * return: void
+ *_printf - our own printf
+ *@format: the character that we goona return
+ *return: void
  */
 int _printf(const char *format, ...)
 {
