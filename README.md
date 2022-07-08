@@ -10,9 +10,11 @@ We make it From 0 to 100 by using VS CODE and VIM.
 (a reformuler)
 
 Printf() function is often used to our program to do formatted output. All variants of printf function use the same formatting techniques. There is a string that specifies the layouts of output is call format specifier.
-function prototype
-int _printf(const char *format, ...);
+## Function prototype
+```{r mon_bloc, echo = FALSE, WARNING = TRUE}
 
+int _printf(const char *format, ...);
+```
 where format can be a simple string without any specifiers or it can contain specifiers and the arguments corresponding to them.
 ## Implemented format specifiers
  
@@ -55,7 +57,7 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
 ## What our file stand for:
 
-* Main.h : Header file
+* [Main.h](#main.h) : Header file
 * Get_function.c:  This file contains the functions to handle each argument type.
 
 ## Functions used:
