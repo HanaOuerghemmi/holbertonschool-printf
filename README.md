@@ -57,7 +57,7 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
 ## What our file stand for:
 
-* [Main.h](#main.h) : Header file
+* [Main.h](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/main.h) : Header file
 * Get_function.c:  This file contains the functions to handle each argument type.
 
 ## Functions used:
