@@ -5,11 +5,11 @@
 
 
 /**
- * print_char - function that print a character
+ * _pchar - function that print a character
  * @args: the arguments
  * Return: 1
  */
-int print_char(va_list args)
+int _pchar(va_list args)
 {
 	char c;
 
@@ -19,11 +19,11 @@ int print_char(va_list args)
 }
 
 /**
- * print_string - function that print a string
+ * _pstring - function that print a string
  * @args: the arguments
  * Return: number of charcter printed
  */
-int print_string(va_list args)
+int _pstring(va_list args)
 {
 	char *str;
 	int i = 0;
@@ -45,11 +45,11 @@ int print_string(va_list args)
 
 
 /**
- * print_pers - function that print a % sgine
+ * _ppers - function that print a % sgine
  * @args: the argument
  * Return: 1
  */
-int print_pers(va_list args)
+int _ppers(va_list args)
 {
 	(void) args;
 
@@ -59,11 +59,11 @@ int print_pers(va_list args)
 
 
 /**
-*print_int - function that print a decimal or an integr number
+*_pint - function that print a decimal or an integr number
 *@args: the arguument
 *Return: 1 if ou number is digit else 0
 */
-int print_int(va_list args)
+int _pint(va_list args)
 {
 	int n, i, x, rest;
 

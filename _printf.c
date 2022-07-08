@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  *_printf - our own printf function
  *@format: the format specifier
@@ -9,12 +8,12 @@ int _printf(const char *format, ...)
 {
 	int i, j, a = 0, b = 0;
 	va_list arg;
-	symbol s[] = {
+	symbol_s s[] = {
 		{'c', _pchar},
-		{'s', print_string},
-		{'i', print_int},
-		{'d', print_int},
-		{'%', print_pers},
+		{'c', _pstring},
+		{'i', _pint},
+		{'d', _pint},
+		{'%', _ppers},
 		{0, NULL}
 	};
 
@@ -47,9 +46,7 @@ int _printf(const char *format, ...)
 			a++;
 		}
 		i++;
-
 	}
 	va_end(arg);
 	return (a + b);
-
 }
