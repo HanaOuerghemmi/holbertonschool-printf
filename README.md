@@ -19,36 +19,18 @@ where format can be a simple string without any specifiers or it can contain spe
 ## Implemented format specifiers
 
 
-| Specifier:| Output | Example|
-| :---------|:-------|-------:|
+| Specifier:|	Output				|	Example			|
+| :---------|:---------------------	|-----------------:	|
+|	c		|Character				|	H				|
+|	s		|String					|	Hello World		|
+|	d		|decimal integer		|	100				|	
+|	i		|Integer				|	100				|
+|	%		|% followed by another %|	%				|
+|	b		|Binary					|	1010			|
+|			|Character				|	H				|
 
 
-Output:
 
-Example:
-
-c:
-
-Character
-H
-s:
-
-String
-Hello World
-d:
-
-decimal integer
-100
-i:
-
-decimal integer
-100
-%:
-
-A % followed by another
-%
-
- 
 >Check the Man Page for detailed usage.
 ## Algorithm and logic behind this
 * Check this flowchart explaining the functions flow
