@@ -6,7 +6,7 @@ We make it From 0 to 100 by using VS CODE and VIM.
 
 ## Description: 
 
-_printf is a custom implementation of the C programming function printf. Similar to the printf (3) - Prints formatted data to stdout
+`_printf` is a custom implementation of the C programming function printf. Similar to the printf (3) - Prints formatted data to stdout
 (a reformuler)
 
 Printf() function is often used to our program to do formatted output. All variants of printf function use the same formatting techniques. There is a string that specifies the layouts of output is call format specifier.
