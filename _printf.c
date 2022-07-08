@@ -9,13 +9,8 @@ int _printf(const char *format, ...)
 	int i, j, a = 0, b = 0;
 	va_list arg;
 	symbol_s s[] = {
-		{'c', _pchar},
-		{'c', _pstring},
-		{'i', _pint},
-		{'d', _pint},
-		{'%', _ppers},
-		{0, NULL}
-	};
+		{'c', _pchar}, {'c', _pstring}, {'i', _pint},
+		{'d', _pint}, {'%', _ppers}, {0, NULL}};
 
 	va_start(arg, format);
 	if (format == NULL)
