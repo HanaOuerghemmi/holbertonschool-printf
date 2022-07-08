@@ -18,6 +18,9 @@ int _printf(const char *format, ...);
 where format can be a simple string without any specifiers or it can contain specifiers and the arguments corresponding to them.
 ## Implemented format specifiers
  
+R>library(knitr)
+	kable(tab)
+
 Specifier:
 
 Output:
@@ -58,7 +61,8 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
 ## What our file stand for:
 
 * [Main.h](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/main.h) : Header file
-* Get_function.c:  This file contains the functions to handle each argument type.
+* [Get_function.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/get_function.c):  This file contains the functions to handle each argument type.
+* []
 
 ## Functions used:
 
