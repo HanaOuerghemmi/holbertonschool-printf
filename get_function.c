@@ -46,7 +46,7 @@ int _pstring(va_list args)
 	_putchar('L');
 	_putchar(')');
 
-	return (6);
+	return (i);
 
 }
 
