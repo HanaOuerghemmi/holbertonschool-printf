@@ -37,6 +37,7 @@ int _pstring(va_list args)
 			_putchar(str[i]);
 			i++;
 		}
+		return (i);
 	}
 	_putchar('(');
 	_putchar('N');
@@ -45,7 +46,7 @@ int _pstring(va_list args)
 	_putchar('L');
 	_putchar(')');
 
-	return (i);
+	return (6);
 
 }
 
@@ -67,7 +68,7 @@ int _ppers(va_list args)
 /**
 *_pint - function that print a decimal or an integr number
 *@args: the arguument
-*Return: 1 if ou number is digit else 0
+*Return: 1
 */
 int _pint(va_list args)
 {
