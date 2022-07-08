@@ -30,21 +30,13 @@ int _pstring(va_list args)
 
 	str = va_arg(args, char*);
 
-	if (str != NULL)
+	if (str ==	NULL)
+		str = "(NULL)";
+	while (str[i] != '\0')
 	{
-		while (str[i])
-		{
-			_putchar(str[i]);
-			i++;
-		}
-		return (i);
+		_putchar(str[i]);
+		i++;
 	}
-	_putchar('(');
-	_putchar('N');
-	_putchar('U');
-	_putchar('L');
-	_putchar('L');
-	_putchar(')');
 
 	return (i);
 

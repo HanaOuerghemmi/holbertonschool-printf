@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <limits.h>
 /**
  * struct  - type symbole
  * @op: the symbole
@@ -11,7 +12,7 @@
  */
 typedef struct symbol {
 char op;
-int (*f)(va_list arg);
+int (*f)(va_list);
 } symbol_s;
 
 /* Standard functions*/

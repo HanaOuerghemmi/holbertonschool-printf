@@ -6,7 +6,7 @@
  */
 int _pbinary(va_list arg)
 {
-	unsigned int b[32];
+	unsigned int binary[32];
 	int i = 0;
 	unsigned int n = 0, j = 0;
 
@@ -21,13 +21,13 @@ int _pbinary(va_list arg)
 	{
 		while (n > 0)
 		{
-			b[i] = n % 2;
+			binary[i] = n % 2;
 			n = n / 2;
 			i++;
 		}
-		for (i -= 1; i >= 0; i--)
+		for (i = i - 1; i >= 0; i--)
 		{
-			_putchar(b[i] + '0');
+			_putchar(binary[i] + '0');
 			j++;
 		}
 	}
