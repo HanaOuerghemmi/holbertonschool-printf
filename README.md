@@ -1,4 +1,4 @@
-#Holbertonschool-printf
+# Holbertonschool-printf
 ## _printf:
 
 In our First Holberton school group project pair programing we work on making our own printf,
@@ -14,7 +14,7 @@ function prototype
 int _printf(const char *format, ...);
 
 where format can be a simple string without any specifiers or it can contain specifiers and the arguments corresponding to them.
-# Implemented format specifiers
+## Implemented format specifiers
  
 Specifier:
 
@@ -50,9 +50,9 @@ A % followed by another
 > Compilation and testing
 
 ## We are compiling via:
-
-> $ gcc -Wall -Werror -Wextra -pedantic *.c
-
+...{r}
+$ gcc -Wall -Werror -Wextra -pedantic *.c
+...
 ## What our file stand for:
 
 * Main.h : Header file
@@ -67,6 +67,6 @@ A % followed by another
 * va_arg
  
 ## Authors:
- hana Ouerghemmi
- aya aribi
+* hana Ouerghemmi
+* aya aribi
  
