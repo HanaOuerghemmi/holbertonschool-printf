@@ -26,6 +26,7 @@ int _pstring(va_list args);
 int _ppers(va_list args);
 int _pint(va_list args);
 void _rec_int(int n);
+int _pbinary(va_list arg);
 /*our printf*/
 int _printf(const char *format, ...);
 
