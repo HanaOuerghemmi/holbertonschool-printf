@@ -17,11 +17,11 @@ int _printf(const char *format, ...);
 ```
 where format can be a simple string without any specifiers or it can contain specifiers and the arguments corresponding to them.
 ## Implemented format specifiers
- 
-R>library(knitr)
-	kable(tab)
 
-Specifier:
+
+| Specifier:| Output | Example|
+| :---------|:-------|-------:|
+
 
 Output:
 
