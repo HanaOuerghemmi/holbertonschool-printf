@@ -38,7 +38,7 @@ int _pstring(va_list args)
 		_putchar(str[i]);
 		i++;
 	}
-
+	write(STDOUT_FILENO, str, i);
 	return (i);
 
 }
