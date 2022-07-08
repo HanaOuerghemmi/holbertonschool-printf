@@ -31,12 +31,13 @@ where format can be a simple string without any specifiers or it can contain spe
 
 
 
->Check the Man Page for detailed usage.
+>Check the [Man](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/man_3_printf) Page for detailed usage.
 ## Algorithm and logic behind this
 * Check this flowchart explaining the functions flow
-> Compilation and testing
 
-## We are compiling via:
+## Compilation and testing
+
+#### We are compiling via:
 ```{r mon_bloc, echo = FALSE, WARNING = TRUE}
 $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
