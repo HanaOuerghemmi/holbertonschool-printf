@@ -17,8 +17,7 @@ int _printf(const char *format, ...);
 ```
 where format can be a simple string without any specifiers or it can contain specifiers and the arguments corresponding to them.
 ## Implemented format specifiers
-
-
+<center>
 | Specifier:|	Output				|	Example			|
 | :---------|:---------------------	|-----------------:	|
 |	c		|Character				|	H				|
@@ -30,7 +29,7 @@ where format can be a simple string without any specifiers or it can contain spe
 |			|Character				|	H				|
 
 
-
+</center>
 >Check the [Man](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/man_3_printf) Page for detailed usage.
 ## Algorithm and logic behind this
 * Check this flowchart explaining the functions flow
