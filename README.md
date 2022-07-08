@@ -50,9 +50,9 @@ A % followed by another
 > Compilation and testing
 
 ## We are compiling via:
-...{r}
+```{r mon_bloc, echo = FALSE, WARNING = TRUE}
 $ gcc -Wall -Werror -Wextra -pedantic *.c
-...
+```
 ## What our file stand for:
 
 * Main.h : Header file
