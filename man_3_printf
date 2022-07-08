@@ -1,44 +1,44 @@
-.TH "PRINTF" "8" "july 2022" "PRINTF .0" ""
-.hy
-.SH NAME
-.PP
-_printf\[en] owr first printf function
-.SH SYNOPSIS
-.pp
-#include "main.h"
-#include<stdio.h> 
-#include<stdarg.h>
-.SH DESCRIPTION
+.TH "_PRINTF" "8" "july 2022" "_printf man page" ""
 
-_printf is a custom implementation of the C programming function printf. Similar to the printf (3) - Prints formatted data to stdout
+.SH NAME
+.B
+- _printf\[en] owr first printf function
+
+.SH SYNOPSIS
+
+
+.B #include "main.h"
+.B #include<stdio.h> 
+.B#include<stdarg.h>
+
+.SH DESCRIPTION
+.B _printf
+-_printf is a custom implementation of the C programming function printf. Similar to the printf (3) - Prints formatted data to stdout
 Printf function is often used to our program to do formatted output. All variants of printf function use the same formatting techniques. There is a string that specifies the layouts of output is call format specifier.
 
-.SH EXAMPLES
-
-print implemented format specifiers:
-
-%s 
+.TP
+.BR c 
 : character
-%c 
-: STRING
-%i 
-: decimal integer
-%d 
-: decimal integer
-% : 
-A % followed by another 
-.SH EXIT VALUES
 
-%s
-: H
-%c
-: HELLO WORLD
-%i
-: 100
-%d
-: 100
-%
-: %
+.TP
+.BR s 
+: STRING
+
+.TP
+.BR i 
+: decimal integer
+
+.TP
+.BR d 
+: decimal integer
+
+.TP
+.BR % : 
+A % followed by another 
+
+
 .SH AUTHOR
 
- written by aya aribi and hana Ouerghemmi
+ written by
+ Aya aribi <https://github.com/ayaaribi123>
+ Hana Ouerghemmi <https://github.com/HanaOuerghemmi>
