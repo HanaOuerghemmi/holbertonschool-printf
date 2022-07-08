@@ -71,7 +71,8 @@ int _ppers(va_list args)
 */
 int _pint(va_list args)
 {
-	int i = 1, m = 0, n = 0;
+	int i = 1, m = 0;
+	unsigned int n = 0;
 
 	n = va_arg(args, int);
 	m = n;
@@ -98,7 +99,7 @@ int _pint(va_list args)
  */
 void _rec_int(int n)
 {
-	int i;
+	unsigned int i;
 
 	i = n;
 	if (i / 10)
