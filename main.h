@@ -16,6 +16,7 @@ int (*f)(va_list arg);
 
 /* Standard functions*/
 int _putchar(char c);
+int _strlen(char *s);
 
 
 
@@ -24,7 +25,7 @@ int _pchar(va_list args);
 int _pstring(va_list args);
 int _ppers(va_list args);
 int _pint(va_list args);
-
+void _rec_int(int n);
 /*our printf*/
 int _printf(const char *format, ...);
 

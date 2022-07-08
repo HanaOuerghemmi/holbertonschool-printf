@@ -71,32 +71,37 @@ int _ppers(va_list args)
 */
 int _pint(va_list args)
 {
-	int n, i, x, rest;
+	int i = 1, m = 0, n = 0;
 
 	n = va_arg(args, int);
-	i = 0;
-	rest = 1;
+	m = n;
 
-	x = n;
-
-	if (n < 0)
+	if (m < 0)
 	{
 		_putchar('-');
-		x = -x;
+		m = m * -1;
+		n = m;
+		i += 1;
+	}
+	while (n > 9)
+	{
+		n = n / 10;
 		i++;
 	}
-	while ((x / rest) > 0)
-	{
-		rest = rest * 10;
-
-	}
-	while (rest > 0)
-	{
-		_putchar(x / rest + '0');
-		x = (x % rest);
-		rest = rest / 10;
-		i++;
-	}
+	_rec_int(m);
 	return (i);
+}
+/**
+ * _rec_int - Functtion that print a integer
+ * @n: integer to printed
+ * Return: void
+ */
+void _rec_int(int n)
+{
+	int i;
 
+	i = n;
+	if (i / 10)
+		_rec_int(i / 10);
+	_putchar(i % 10 +  '0');
 }
