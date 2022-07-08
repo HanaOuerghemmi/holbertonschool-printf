@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	va_list arg;
 
 	symbol_s s[] = {
-		{'c', _pchar}, {'c', _pstring}, {'i', _pint},
+		{'c', _pchar}, {'s', _pstring}, {'i', _pint},
 		{'d', _pint}, {'%', _ppers}, {0, NULL}, {'b', _pbinary}
 	};
 
