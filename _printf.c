@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 
 	va_start(arg, format);
 
-	if (!format || (format[0] == '%' && format[1]  ==  '\0'))
+	if (!format || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
 	while (format[i] && format)
@@ -21,13 +21,13 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			j++;
 		}
-		else
+		if (format[i] == '%')
 		{
 			k = _get_all(format[i + 1], arg);
 			if (k != 0)
 			{
-				j += k;
-				i += 2;
+				j = j + k;
+				i = i + 2;
 				continue;
 			}
 			if (format[i] == '\0')

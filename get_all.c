@@ -26,7 +26,7 @@ int _get_all(const char c, va_list arg)
 	{
 		if (s[i].op == c)
 		{
-			j += s[i].f(arg);
+			j = j + s[i].f(arg);
 			return (j);
 		}
 		i++;

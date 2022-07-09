@@ -10,9 +10,10 @@
  * @op: the symbole
  * @f: pointer to a function 
  */
-typedef struct symbol {
-char op;
-int (*f)(va_list);
+typedef struct symbol
+{
+	char op;
+	int (*f)(va_list);
 } symbol_s;
 
 /* Standard functions*/
