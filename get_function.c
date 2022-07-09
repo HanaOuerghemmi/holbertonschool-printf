@@ -11,10 +11,8 @@
  */
 int _pchar(va_list args)
 {
-	char c;
 
-	c = va_arg(args, int);
-	_putchar(c);
+	_putchar(va_arg(args, int));
 	return (1);
 }
 

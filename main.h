@@ -22,6 +22,7 @@ int _strlen(char *s);
 
 
 /* print the specified type*/
+int _get_all(const char c, va_list arg);
 int _pchar(va_list args);
 int _pstring(va_list args);
 int _ppers(va_list args);
