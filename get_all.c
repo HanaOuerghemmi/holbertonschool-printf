@@ -23,6 +23,7 @@ int _get_all(const char c, va_list arg)
 				{'o', _printo},
 				{'x', _printx},
 				{'X', _printX},
+				{'r', _printrev},
 				{0, NULL}
 	};
 
