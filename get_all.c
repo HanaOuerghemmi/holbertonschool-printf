@@ -1,3 +1,4 @@
+/* this file contain the function get all that chckthe symbol opt*/
 #include "main.h"
 
 
