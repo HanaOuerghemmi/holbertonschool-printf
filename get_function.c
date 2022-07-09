@@ -48,7 +48,7 @@ int _pstring(va_list args)
  */
 int _ppers(va_list args)
 {
-	(void) args;
+	(void)args;
 
 	_putchar('%');
 	return (1);

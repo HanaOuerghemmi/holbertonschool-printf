@@ -18,8 +18,8 @@ int _get_all(const char c, va_list arg)
 				{'i', _pint},
 				{'d', _pint},
 				{'%', _ppers},
-				{0, NULL},
-				{'b', _pbinary}
+				{'b', _pbinary},
+				{0, NULL}
 	};
 
 	while (s[i].op != 0)

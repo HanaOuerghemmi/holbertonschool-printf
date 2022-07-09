@@ -8,7 +8,7 @@
 /**
  * struct  - type symbole
  * @op: the symbole
- * @f: pointer to a function 
+ * @f: pointer to a function
  */
 typedef struct symbol
 {

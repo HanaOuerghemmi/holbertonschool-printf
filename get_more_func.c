@@ -8,14 +8,14 @@ int _pbinary(va_list arg)
 {
 	unsigned int binary[32];
 	int i = 0;
-	unsigned int n = 0, j = 0;
+	unsigned int n = 0, c = 0;
 
 	n = va_arg(arg, unsigned int);
 
 	if (n <= 1)
 	{
 		_putchar(n + '0');
-		j++;
+		c++;
 	}
 	else
 	{
@@ -28,8 +28,8 @@ int _pbinary(va_list arg)
 		for (i = i - 1; i >= 0; i--)
 		{
 			_putchar(binary[i] + '0');
-			j++;
+			c++;
 		}
 	}
-	return (j);
+	return (c);
 }
