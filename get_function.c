@@ -33,6 +33,7 @@ int _pstring(va_list args)
 
 	if (str[i] == '\0')
 	{
+		i++;
 		return (1);
 	}
 
