@@ -13,18 +13,18 @@ int _get_all(const char c, va_list arg)
 	int i = 0, j = 0;
 
 	symbol_s s[] = {
-				{'c', _pchar},
-				{'s', _pstring},
-				{'i', _pint},
-				{'d', _pint},
-				{'%', _ppers},
-				{'b', _pbinary},
-				{'u', _printu},
-				{'o', _printo},
-				{'x', _printx},
-				{'X', _printX},
-				{'r', _printrev},
-				{0, NULL}
+		{'c', _pchar},
+		{'s', _pstring},
+		{'i', _pint},
+		{'d', _pint},
+		{'%', _ppers},
+		{'b', _pbinary},
+		{'u', _printu},
+		{'o', _printo},
+		{'x', _printx},
+		{'X', _printX},
+		{'r', _printrev},
+		{0, NULL}
 	};
 
 	while (s[i].op != 0)
@@ -37,11 +37,11 @@ int _get_all(const char c, va_list arg)
 
 		i++;
 	}
-	return (0);
-	if (s[i].op != c)
+	if (s[0].op != c)
 	{
 		_putchar('%');
 		_putchar(c);
 		return (2);
 	}
+	return (0);
 }
