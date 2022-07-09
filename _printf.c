@@ -30,10 +30,6 @@ int _printf(const char *format, ...)
 				i = i + 2;
 				continue;
 			}
-			else
-			{
-				_putchar(format[i]);
-			}
 			if (format[i] == '\0')
 			{
 				_putchar(format[i]);

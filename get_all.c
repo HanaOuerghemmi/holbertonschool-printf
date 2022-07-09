@@ -38,4 +38,10 @@ int _get_all(const char c, va_list arg)
 		i++;
 	}
 	return (0);
+	if (s[i].op != c)
+	{
+		_putchar('%');
+		_putchar(c);
+		return (2);
+	}
 }
