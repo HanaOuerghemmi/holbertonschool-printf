@@ -30,6 +30,13 @@ int _pstring(va_list args)
 
 	if (str ==	NULL)
 		str = "(null)";
+
+	if (str[i] == '\0')
+	{
+		str = '\0';
+		return (1);
+	}
+
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);

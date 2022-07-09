@@ -14,6 +14,7 @@ int _printf(const char *format, ...)
 	if (!format || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
+
 	while (format[i] && format)
 	{
 		if (format[i] != '%')
@@ -30,12 +31,12 @@ int _printf(const char *format, ...)
 				i = i + 2;
 				continue;
 			}
+
 			if (format[i] == '\0')
 			{
 				_putchar(format[i]);
 				j++;
 			}
-
 		}
 		i++;
 	}
