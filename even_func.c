@@ -14,6 +14,8 @@ int _printrev(va_list arg)
 
 	if (str == NULL)
 		str = "(null)";
+	if (str[i] == '\0')
+		return (1);
 	while (str[i] != '\0')
 		i++;
 	for (j = i - 1; j >= 0; j--)
