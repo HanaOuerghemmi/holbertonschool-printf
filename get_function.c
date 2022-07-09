@@ -33,7 +33,7 @@ int _pstring(va_list args)
 
 	if (str[i] == '\0')
 	{
-		str = '\0';
+		_putchar('\0');
 		return (1);
 	}
 
