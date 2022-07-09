@@ -19,6 +19,10 @@ int _get_all(const char c, va_list arg)
 				{'d', _pint},
 				{'%', _ppers},
 				{'b', _pbinary},
+				{'u', _printu},
+				{'o', _printo},
+				{'x', _printx},
+				{'X', _printX},
 				{0, NULL}
 	};
 
@@ -29,6 +33,7 @@ int _get_all(const char c, va_list arg)
 			j = j + s[i].f(arg);
 			return (j);
 		}
+
 		i++;
 	}
 	return (0);
