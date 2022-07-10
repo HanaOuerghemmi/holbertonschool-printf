@@ -6,43 +6,35 @@
 	<b><i>HOLBERTON SCHOOL PRINTF</i></b><br>
 </p>
 
-<p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/surfi89/ft_printf?color=lightblue" />
-	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/surfi89/ft_printf?color=critical" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/surfi89/ft_printf?color=yellow" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/surfi89/ft_printf?color=blue" />
-	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/surfi89/ft_printf?color=green" />
-</p>
 
 <h3 align="center">
 	<a href="#Description">About</a>
 	<span> · </span>
-	<a href="#Algorithm and logic behind this">Usage</a>
+	<a href="#Algorithm-and-logic-behind-this">Usage</a>
 	<span> · </span>
-	<a href="#Compilation and testing">Testing</a>
+	<a href="#Compilation-and-testing">Testing</a>
 </h3>
 
 ---
 
-# Holbertonschool-printf
-## _printf:
+## 💡 _printf:
 
 In our First Holberton school group project pair programing we work on making our own `_printf`,
 We make it From 0 to 100 by using VS CODE and VIM.
 
-## Description: 
+## 💡 Description: 
 
 `_printf` is a custom implementation of the C programming function printf. Similar to the printf (3) - Prints formatted data to stdout
 
 Printf() function is often used to our program to do formatted output. All variants of printf function use the same formatting techniques. There is a string that specifies the layouts of output is call format specifier.
 
-## Function prototype
+##📋  Function prototype
 ```{r mon_bloc, echo = FALSE, WARNING = TRUE}
 
 int _printf(const char *format, ...);
 ```
 where format can be a simple string without any specifiers or it can contain specifiers and the arguments corresponding to them.
-## Implemented format specifiers
+##📋  Implemented format specifiers
 
 | Specifier:|	Output				|	Example			|
 | :---------|:---------------------	|-----------------:	|
@@ -57,16 +49,17 @@ where format can be a simple string without any specifiers or it can contain spe
 
 
 >Check the [Man](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/man_3_printf) Page for detailed usage.
-## Algorithm and logic behind this
+## 🛠️  Algorithm and logic behind this
 * Check this flowchart explaining the functions flow
 
-## Compilation and testing
+
+## 🛠️  Compilation and testing
 
 #### We are compiling via:
 ```{r mon_bloc, echo = FALSE, WARNING = TRUE}
 $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
-## What our file stand for:
+##📋  What our file stand for:
 
 * [Main.h](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/main.h) : Header file
 * [Get_function.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/get_function.c):  This file contains the functions to handle each argument type.
@@ -74,7 +67,7 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
 * [stdr_function.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/stdr_function.c) : This file 
 
 
-## Functions used:
+## 📋  Functions used:
 
 * `write`
 * `va_start` 
