@@ -78,7 +78,7 @@ _printf("print d :%d\n", -762534);
 	print d : -762534
 
 
-##📋  What our file stand for:
+## 📋  What our file stand for:
 
 * [Main.h](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/main.h) :The Header file
 * [Get_function.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/get_function.c):  This file contains the functions to handle each argument type like (s, c, %, i, d).
