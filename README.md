@@ -5,7 +5,10 @@
 <p align="center">
 	<b><i>HOLBERTON SCHOOL PRINTF</i></b><br>
 </p>
+<p align="center">
+	<img alt="_printf" src="_printf.png"/>
 
+</p>
 
 <h3 align="center">
 	<a href="#Description">About</a>
@@ -28,7 +31,7 @@ We make it From 0 to 100 by using VS CODE and VIM.
 
 Printf() function is often used to our program to do formatted output. All variants of printf function use the same formatting techniques. There is a string that specifies the layouts of output is call format specifier.
 
-##📋  Function prototype
+## 📋  Function prototype
 ```{r mon_bloc, echo = FALSE, WARNING = TRUE}
 
 int _printf(const char *format, ...);
