@@ -37,7 +37,8 @@ Printf() function is often used to our program to do formatted output. All varia
 int _printf(const char *format, ...);
 ```
 where format can be a simple string without any specifiers or it can contain specifiers and the arguments corresponding to them.
-##📋  Implemented format specifiers
+
+## 📋  Implemented format specifiers
 
 		| Specifier:|	Output							|	Example			|
 		| :---------|:----------------------------------|-----------------:	|
