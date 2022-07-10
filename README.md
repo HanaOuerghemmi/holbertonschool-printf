@@ -68,6 +68,15 @@ where format can be a simple string without any specifiers or it can contain spe
 ```{r mon_bloc, echo = FALSE, WARNING = TRUE}
 $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
+### EXEMPLE
+```
+_printf("print d :%d\n", -762534);
+
+```
+`the output` : 
+
+	print d : -762534
+
 
 ##📋  What our file stand for:
 
