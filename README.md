@@ -60,7 +60,7 @@ where format can be a simple string without any specifiers or it can contain spe
 
 ## 🛠️  Algorithm and logic behind this
 * Check this flowchart explaining the functions flow
-
+![flowchart](_printfFLOWCHART.png)
 
 ## 🛠️  Compilation and testing
 
