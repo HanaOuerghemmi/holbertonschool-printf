@@ -35,6 +35,7 @@ int _printo(va_list arg);
 int _printx(va_list arg);
 int _printX(va_list arg);
 int _printrev(va_list arg);
+int _prot13(va_list arg);
 
 /*our printf*/
 int _printf(const char *format, ...);
