@@ -24,6 +24,7 @@ int _get_all(const char c, va_list arg)
 		{'x', _printx},
 		{'X', _printX},
 		{'r', _printrev},
+	/*	{'R', _prot13},*/
 		{0, NULL}
 	};
 
