@@ -6,7 +6,7 @@
 	<b><i>HOLBERTON SCHOOL PRINTF</i></b><br>
 </p>
 <p align="center">
-	<img alt="_printf" src="_printf.png"/>
+	<img ="_printf" src="_printf.png"/>
 
 </p>
 
@@ -39,19 +39,24 @@ int _printf(const char *format, ...);
 where format can be a simple string without any specifiers or it can contain specifiers and the arguments corresponding to them.
 ##📋  Implemented format specifiers
 
-| Specifier:|	Output				|	Example			|
-| :---------|:---------------------	|-----------------:	|
-|	c		|Character				|	H				|
-|	s		|String					|	Hello World		|
-|	d		|decimal integer		|	100				|	
-|	i		|Integer				|	100				|
-|	%		|% followed by another %|	%				|
-|	b		|Binary					|	1010			|
-|			|Character				|	H				|
+		| Specifier:|	Output							|	Example			|
+		| :---------|:----------------------------------|-----------------:	|
+		|	c		|		Character					|		H			|
+		|	s		|		String						|		Hello		|
+		|	d		|		decimal integer				|		100			|	
+		|	i		|		Integer						|		100			|
+		|	%		|		% followed by another %		|		%			|
+		|	b		|		Binary						|		1010		|
+		|	u		|	Unsigned decimal int			|		100			|
+		|   o		|	Unsigned octal integer			|		1142		|
+		|	x		|	Unsigned Hzxadecimal (lowcase)	|		7fa			|
+		|	X		|	Unsigned Hexadecimal (uppercase)|		7FA			|
+		|	r		|	Reverse a string				|		olleh		|
 
 
 
 >Check the [Man](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/man_3_printf) Page for detailed usage.
+
 ## 🛠️  Algorithm and logic behind this
 * Check this flowchart explaining the functions flow
 
@@ -62,12 +67,15 @@ where format can be a simple string without any specifiers or it can contain spe
 ```{r mon_bloc, echo = FALSE, WARNING = TRUE}
 $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
+
 ##📋  What our file stand for:
 
-* [Main.h](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/main.h) : Header file
-* [Get_function.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/get_function.c):  This file contains the functions to handle each argument type.
-* [Get_more_func.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/get_more_func.c) : This file
-* [stdr_function.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/stdr_function.c) : This file 
+* [Main.h](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/main.h) :The Header file
+* [Get_function.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/get_function.c):  This file contains the functions to handle each argument type like (s, c, %, i, d).
+* [Get_more_func.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/get_more_func.c) : This file contains the function to handle each argument type like (b,u, o, x, X)
+* [even_func.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/even_func.c): This file contains the function to handle each argument type like (r, )
+* [get_all.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/get_all.c) : this file containe the function how cheks function 
+* [stdr_function.c](https://github.com/HanaOuerghemmi/holbertonschool-printf/blob/main/stdr_function.c) : This file contains the standard function (_putchar).
 
 
 ## 📋  Functions used:
@@ -80,5 +88,5 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
  
 ## Authors:
 * [Hana Ouerghemmi](https://github.com/HanaOuerghemmi)
-* [Aya aribi](https://github.com/ayaaribi123)
+* [Aya Aribi](https://github.com/ayaaribi123)
  
